@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/wholescreen"
+    android:padding="16dp"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+	    android:layout_below="@+id/sumTextView"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_marginTop="40dp"
+	    android:orientation="vertical" >
+	    <TextView
+	        android:id="@+id/num1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:text="1234"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textSize="@dimen/number_size"
+	        android:layout_marginTop="@dimen/box_margin_up_down"
+	        android:layout_marginBottom="@dimen/box_margin_up_down"
+	        android:layout_marginLeft="@dimen/box_margin_left_right" 
+	        android:layout_marginRight="@dimen/box_margin_left_right"/>
+	    <TextView
+	        android:id="@+id/num2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:text="1234"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textSize="@dimen/number_size"
+	        android:layout_marginTop="@dimen/box_margin_up_down"
+	        android:layout_marginBottom="@dimen/box_margin_up_down"
+	        android:layout_marginLeft="@dimen/box_margin_left_right" 
+	        android:layout_marginRight="@dimen/box_margin_left_right"  />
+	    <TextView
+	        android:id="@+id/num3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/num1"
+	        android:layout_alignParentLeft="true"
+	        android:text="1234"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textSize="@dimen/number_size"
+	        android:layout_marginTop="@dimen/box_margin_up_down"
+	        android:layout_marginBottom="@dimen/box_margin_up_down"
+	        android:layout_marginLeft="@dimen/box_margin_left_right" 
+	        android:layout_marginRight="@dimen/box_margin_left_right"  />
+	
+	    <TextView
+	        android:id="@+id/num4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/num2"
+	        android:layout_alignParentRight="true"
+	        android:text="1234"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textSize="@dimen/number_size"
+	        android:layout_marginTop="@dimen/box_margin_up_down"
+	        android:layout_marginBottom="@dimen/box_margin_up_down"
+	        android:layout_marginLeft="@dimen/box_margin_left_right" 
+	        android:layout_marginRight="@dimen/box_margin_left_right"  />
+
+	    
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/undoButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/undo_button"
+        android:layout_margin="@dimen/box_margin_left_right"/>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignBaseline="@+id/undoButton"
+        android:layout_alignBottom="@+id/undoButton"
+        android:background="@drawable/reset_button"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/box_margin_left_right"/>
+    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignLeft="@+id/undoButton"
+	        android:layout_marginBottom="30dp"
+	        android:text="Undo"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:textColor="@color/status_text_color" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/resetButton"
+        android:text="Reset"
+        android:layout_marginBottom="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/status_text_color" />
+
+    <TextView
+        android:id="@+id/clickCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Small Text"
+        android:textColor="@color/status_text_color"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/sumTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
